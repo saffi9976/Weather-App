@@ -1,0 +1,18 @@
+body{
+    background: var(--start);
+    animation: changeBg 2s linear infinite;
+}
+
+:root{
+    --start: #1a1521;
+    --end: #866584;
+}
+
+@keyframes changeBg{
+    0%{
+        background: var(--start);
+    }
+    100%{
+        background: var(--end);
+    }
+}

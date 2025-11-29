@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1a1521;
+    color: #333;
+    animation: moveBg var(--time) linear infinite;
+}
+
+:root{
+    --start:#000000;
+    --end:#111111;
+    --f_color:#1a1521;
+    --s_color:#866584; 
+    --time: 10s;
+}
+
+header {
+    text-align: center;
+    background: #1a1521;
+    color: white;
+    padding: 20px 0;
+    animation: moveBg1 var(--time) linear infinite;
+}
+
+h1 {
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    height: 2px;
+    background-color: #333;
+}
+
+.dashboard {
+    background: #1a1521;
+    animation: moveBg2 var(--time) linear infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 0;
+    border-top:5px solid rgba(0, 0, 0, 0.123);
+
+}
+
+.structure, .music {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow:  var(--end) 3px 3px 6px 0px inset, var(--start) -3px -3px 6px 1px inset;
+}
+
+iframe{
+    width: 250px;
+}
+
+.name, .fetch, #username, #password{
+    background-clip: text;
+    align-items: center;
+}
+#name, #playlist{
+    display: table-row;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid #ccc;
+}
+
+#name, #playlist{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+@keyframes moveBg {
+    0% { background: var(--f_color); }
+    100% { background: var(--s_color); }
+}
+@keyframes moveBg1{
+    0% { background: var(--f_color); }
+    100% { background: var(--s_color); }
+}
+@keyframes moveBg2 {
+    0% { background: var(--f_color); }
+    100% { background: var(--s_color); }
+}
+
+/* Music Player css */
